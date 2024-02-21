@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Mi Portafolio</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                
+            </div>
+            <h1>Luis Eduardo Manriquez Arriola</h1>
+            <h2 class="programador">Programador Informático</h2>
+        </div>
+    </section>
+
+    <!--SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p>Profesional ,Bachiller en Administración de Sistemas e Informática de la Universidad de
+                Ciencias y Humanidades. Soy capaz de formular y poner en marcha planes informáticos
+                según los objetivos de la empresa a corto, mediano y largo plazo, así como supervisar
+                proyectos, habilidades para obtener y analizar información, capacidad de síntesis.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfono</strong>
+                            958239102
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            ledu.manriqueza@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Av.Aurelio Garcia y Garcia 1345
+                        </li>
+                        <li>
+                            <strong>Estado actual</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <a href="archivos/cv.pdf" class="descarga" download="cv.pdf"><button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button></a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Mis Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Porcentajes de cocimientos actualmente</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>93%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>82%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Porcentajes en la elaboración de un proyecto</h3>
+                    <div class="skill">
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>88%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Liderazgo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    
+                    <div class="item izq">
+                        <h4>Carrera de Ing Sistemas</h4>
+                        <span class="casa">Universidad de Ciencias y Humanidades</span>
+                        <span class="fecha">2014 - 2020</span>
+                        <p>Fue creada por resolución 0411 del Consejo Nacional para la Autorización de
+                            Funcionamiento de Universidades (CONAFU) el 16 de diciembre del 2006;
+                            asimismo, a través de la resolución N° 071-2017, publicada el 21 de
+                            noviembre de 2017 en el diario oficial El Peruano, la Superintendencia
+                            Nacional de Educación Superior Universitaria (SUNEDU) otorgó el
+                            licenciamiento institucional, tras culminar con éxito este procedimiento de
+                            carácter obligatorio para todas las casas de estudios superiores del país.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Exponente en la feria de investigación Shircon</h4>
+                        <span class="casa">Universidad de Ciencias y Humanidades</span>
+                        <span class="fecha">2019</span>
+                        <p>La Universidad de Ciencias y Humanidades, como parte de su propuesta de formación integral y de su misión social de impulsar la generación de conocimiento en los diferentes campos del saber, desarrollará el VI Congreso Internacional de Investigación en Ciencias y Humanidades SHIRCON: SCIENCES AND HUMANITIES INTERNATIONAL RESEARCH CONFERENCE.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Certificado Fundamentos de Seguridad de la Información</h4>
+                        <span class="casa">Centro Nacional de Seguridad Digital (CNSD)</span>
+                        <span class="fecha">2023</span>
+                        <p>Como componente integrante de la seguridad nacional, el Centro Nacional de Seguridad Digital gestiona, dirige, articula y supervisa la operación, educación, promoción, colaboración y cooperación de la Seguridad Digital en el país, a fin de fortalecer la confianza digital. El CNSD es el único punto de contacto nacional en las comunicaciones y coordinaciones con otros organismos, centros o equipos nacionales e internacionales de similar naturaleza. Fue creado a través del Decreto de Urgencia Nº 007-2020 y es administrado por la Secretaria de Gobierno y Transformación Digital.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                  
+                    <div class="item der">
+                        <h4> Javascript ES9, HTML, CSS3 y NodeJS</h4>
+                        <span class="casa">Udemy</span>
+                        <span class="fecha">2023</span>
+                        <p>"Este curso tiene tecnologías modernas que son utilizadas por todos los desarrolladores web del mundo en el día a día. Aprovecha esta oportunidad para que podamos encaminarte de una manera eficiente a convertirte en un desarrollador web."
+                            <br><br>
+                            https://www.udemy.com/course/aprende-javascript-es9-html-css3-y-nodejs-desde-cero/learn/lecture/19243412?start=0#overview
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Python</h4>
+                        <span class="casa">Udemy</span>
+                        <span class="fecha">2023</span>
+                        <p>"Python esta dentro de los lenguajes más populares en la actualidad, debido a que se utiliza para construir aplicaciones grandes y robustas. Desde automatizar tareas simples hasta trabajar con Machine Learning, desarrollo Web o ciencias de datos." 
+                            <br><br>
+                            https://www.udemy.com/course/ultimate-python-de-cero-a-programador-experto/</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollo Web: HTML y CSS</h4>
+                        <span class="casa">Google</span>
+                        <span class="fecha">2022</span>
+                        <p>Con este curso sin coste continuarás introduciéndote en el diseño de páginas web. En la primera parte del curso aprendiste historia de la Web y te introdujiste al lenguaje HTML. En esta segunda parte, completarás tu formación con el lenguaje CSS para poder realizar webs completas de manera profesional.
+                           <br><br>
+                           https://skillshop.exceedlms.com/student/collection/800472-web-development-ii?sid=d33f40e0-8ba6-40d1-a99c-d543783b7bb7&sid_i=8
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/portada_1.png" alt="Página E-learning orientada al ambito judicial y legal">
+                    <div class="overlay">
+                        <a href="https://uabogadosextrajudiciales.es/" target="_blank"> <h3>uabogadosextrajudiciales.es</h3></a>
+                        <p>E-learning</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form action="https://formsubmit.co/ledu.manriqueza@gmail.com" method="POST">
+                    <input type="text" placeholder="Tú Nombre" name="name">
+                    <input type="text" placeholder="Número telefónico" name="number">
+                    <input type="text" placeholder="Dirección de correo" name="mail">
+                    <input type="text" placeholder="Asunto" name="asunto">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" name="comentarios"></textarea>
+                    <button type="submit">Enviar Mensaje</button>
+                    
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.857858909822!2d-77.07685192507219!3d-12.05329938818402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c937502da5ef%3A0x2b4dda0b3848bee4!2sAv.%20Aurelio%20Garc%C3%ADa%20y%20Garc%C3%ADa%201345%2C%20Lima%2015081!5e0!3m2!1ses-419!2spe!4v1706230297276!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Av.Aurelio Garcia Y Garcia #1345
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                números: 958239102 - 6388444 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: ledu.manriqueza@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/profile.php?id=100085917317193" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/ledu_2024" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://github.com/luimanza" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/luis-eduardo-manriquez-arriola-b344b22b1/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
